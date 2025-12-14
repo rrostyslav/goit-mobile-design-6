@@ -3,7 +3,7 @@
   "slug": "goit-mobile-design-6",
   "scheme": "goitmobiledesign6",
   "version": "1.0.0",
-  "orientation": "portrait",
+  "orientation": "default",
   "icon": "./assets/icon.png",
   "newArchEnabled": true,
   "userInterfaceStyle": "automatic",

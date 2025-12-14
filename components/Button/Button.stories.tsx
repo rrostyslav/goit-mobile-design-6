@@ -1,14 +1,12 @@
-import type { Meta, StoryObj } from "@storybook/react-native";
-import { fn } from "storybook/test";
-import { View } from "react-native";
-import { MyButton } from "./Button";
+import type { Meta, StoryObj } from "@storybook/react-native"
+import { fn } from "storybook/test"
+import { View } from "react-native"
+import { Button } from "./Button"
 
 const meta = {
-  title: "MyButton",
-  component: MyButton,
-  args: {
-    text: "Hello world",
-  },
+  title: "Button",
+  component: Button,
+  args: {},
   decorators: [
     (Story) => (
       <View style={{ padding: 16 }}>
@@ -16,14 +14,14 @@ const meta = {
       </View>
     ),
   ],
-} satisfies Meta<typeof MyButton>;
+} satisfies Meta<typeof Button>
 
-export default meta;
+export default meta
 
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof meta>
 
 export const Basic: Story = {
   args: {
-    onPress: fn(),
+    children: "Login",
   },
-};
+}

@@ -1,10 +1,10 @@
-import { Stack } from "expo-router";
+import { Stack } from "expo-router"
 
-const StorybookEnabled = process.env.EXPO_PUBLIC_STORYBOOK_ENABLED === "true";
+const StorybookEnabled = process.env.EXPO_PUBLIC_STORYBOOK_ENABLED === "true"
 
 export const unstable_settings = {
   initialRouteName: StorybookEnabled ? "(storybook)/index" : "(pages)/index",
-};
+}
 
 export default function RootLayout() {
   return (
@@ -15,5 +15,5 @@ export default function RootLayout() {
 
       <Stack.Screen name="(pages)/index" />
     </Stack>
-  );
+  )
 }

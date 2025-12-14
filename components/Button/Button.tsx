@@ -1,25 +1,28 @@
-import { TouchableOpacity, Text, StyleSheet } from "react-native";
+import { View, StyleSheet, TouchableOpacity } from "react-native"
+import { Typography } from "../Typography"
+import { colors } from "@/design-system/colors"
 
-interface MyButtonProps {
-  onPress: () => void;
-  text: string;
+type ButtonProps = {
+  children: string
 }
 
-export const MyButton = ({ onPress, text }: MyButtonProps) => {
+export const Button = ({ children }: ButtonProps) => {
   return (
-    <TouchableOpacity style={styles.container} onPress={onPress}>
-      <Text style={styles.text}>{text}</Text>
+    <TouchableOpacity style={styles.container}>
+      <Typography name="action-m" color="neutral">
+        {children}
+      </Typography>
     </TouchableOpacity>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   container: {
-    paddingHorizontal: 32,
-    paddingVertical: 8,
-    backgroundColor: "purple",
-    alignSelf: "flex-start",
-    borderRadius: 8,
+    backgroundColor: colors.highlight,
+    height: 48,
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 12,
+    alignSelf: "stretch",
   },
-  text: { color: "white", fontSize: 16, fontWeight: "bold" },
-});
+})
