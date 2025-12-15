@@ -1,5 +1,0 @@
-import{j as e}from"./jsx-runtime-Dgx6C67A.js";import{T as s}from"./Typography-BMiGMSZk.js";import{S as n,c as a,V as i}from"./typography-nRPUQl0B.js";import{T as c}from"./index-DW4W_rvc.js";import"./iframe-DjME0V7K.js";import"./preload-helper-Zf8nSx-t.js";const o=({children:t})=>e.jsx(c,{style:m.container,children:e.jsx(s,{name:"action-m",color:"neutral",children:t})}),m=n.create({container:{backgroundColor:a.highlight,height:48,justifyContent:"center",alignItems:"center",borderRadius:12}});o.__docgenInfo={description:"",methods:[],displayName:"Button",props:{children:{required:!0,tsType:{name:"string"},description:""}}};const y={title:"Button",component:o,args:{},decorators:[t=>e.jsx(i,{style:{padding:16},children:e.jsx(t,{})})]},r={args:{children:"Login"}};r.parameters={...r.parameters,docs:{...r.parameters?.docs,source:{originalSource:`{
-  args: {
-    children: "Login"
-  }
-}`,...r.parameters?.docs?.source}}};const x=["Basic"];export{r as Basic,x as __namedExportsOrder,y as default};
