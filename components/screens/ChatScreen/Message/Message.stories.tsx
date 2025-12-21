@@ -1,11 +1,19 @@
 import type { Meta, StoryObj } from "@storybook/react-native"
 import { View } from "react-native"
-import { LoginForm } from "./LoginForm"
+import { Message } from "./Message"
 
 const meta = {
-  title: "LoginForm",
-  component: LoginForm,
-  args: {},
+  title: "ChatScreen/Message",
+  component: Message,
+  args: {
+    message: {
+      id: "1",
+      name: "Alex",
+      message: "Looks good. I'll send the final version soon.",
+      isOwn: true,
+    },
+    maxWidth: 280,
+  },
   decorators: [
     (Story) => (
       <View style={{ padding: 16 }}>
@@ -13,7 +21,7 @@ const meta = {
       </View>
     ),
   ],
-} satisfies Meta<typeof LoginForm>
+} satisfies Meta<typeof Message>
 
 export default meta
 

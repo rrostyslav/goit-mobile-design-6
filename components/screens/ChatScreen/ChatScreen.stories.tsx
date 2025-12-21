@@ -1,22 +1,22 @@
 import type { Meta, StoryObj } from "@storybook/react-native"
 import { View } from "react-native"
-import { LoginForm } from "./LoginForm"
+import { ChatScreen } from "./ChatScreen"
 
 const meta = {
-  title: "LoginForm",
-  component: LoginForm,
+  title: "Screens/ChatScreen",
+  component: ChatScreen,
   args: {},
   decorators: [
     (Story) => (
-      <View style={{ padding: 16 }}>
+      <View style={{ flex: 1 }}>
         <Story />
       </View>
     ),
   ],
-} satisfies Meta<typeof LoginForm>
+} satisfies Meta<typeof ChatScreen>
 
 export default meta
 
 type Story = StoryObj<typeof meta>
 
-export const Basic: Story = {}
+export const FullScreen: Story = {}
