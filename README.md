@@ -1,57 +1,62 @@
-![picture of storybook](https://github.com/user-attachments/assets/cf98766d-8b90-44ab-b718-94ab16e63205)
+# GoIT Mobile Design 6
 
-# getting started
-
-```sh
-npx create-expo-app --template expo-template-storybook AwesomeStorybook
-```
-
-or
+## Scripts
 
 ```sh
-yarn create expo-app --template expo-template-storybook AwesomeStorybook
+npm run storybook
+npm run ios
+npm run android
 ```
 
-# app
+## Screenshots
 
-```sh
-yarn start
-```
-
-# RN Storybook (ondevice)
-
-In this template you can now run `yarn storybook` to start ondevice storybook or `yarn start` to start your expo app.
-This works via env variables and expo constants.
-
-```sh
-# either
-yarn storybook
-
-# ios
-yarn storybook:ios
-
-# android
-yarn storybook:android
-```
-
-If you add new stories on the native (ondevice version) you either need to have the watcher running or run the stories loader
-
-To update the stories one time
-
-```sh
-yarn storybook-generate
-```
-
-# Web
-
-Start react native web storybook:
-
-```
-yarn storybook:web
-```
-
-build react native web storybook:
-
-```sh
-yarn build-storybook
-```
+<table>
+  <tr>
+    <th align="center">Chat List</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/ChatList.png" alt="Chat List" /></td>
+  </tr>
+  <tr>
+    <th align="center">Email Field</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/EmailField.png" alt="Email Field" /></td>
+  </tr>
+  <tr>
+    <th align="center">Login Form</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/LoginForm.png" alt="Login Form" /></td>
+  </tr>
+  <tr>
+    <th align="center">Messages List</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/MessagesList.png" alt="Messages List" /></td>
+  </tr>
+  <tr>
+    <th align="center">Password Field</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/PasswordField.png" alt="Password Field" /></td>
+  </tr>
+  <tr>
+    <th align="center">Search Field</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/SearchField.png" alt="Search Field" /></td>
+  </tr>
+  <tr>
+    <th align="center">Search Form</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/SearchForm.png" alt="Search Form" /></td>
+  </tr>
+  <tr>
+    <th align="center">Send Message Form</th>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/SendMessageForm.png" alt="Send Message Form" /></td>
+  </tr>
+</table>
