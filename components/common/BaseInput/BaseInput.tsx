@@ -1,22 +1,30 @@
-import { TextInput, StyleSheet, TextInputProps, View } from "react-native"
+import { TextInput, StyleSheet, TextInputProps, View, BlurEvent, FocusEvent } from "react-native"
 import { colors } from "@/design-system/colors"
 import { fontStyles } from "@/design-system/typography"
 import { ReactNode, useState } from "react"
 
-export type BaseInputProps = Omit<TextInputProps, "onFocus" | "onBlur" | "style"> & {
+export type BaseInputProps = Omit<TextInputProps, "style"> & {
   leftAdornment?: ReactNode
   rightAdornment?: ReactNode
 }
-
-export const BaseInput = ({ leftAdornment, rightAdornment, ...rest }: BaseInputProps) => {
+// "onFocus" | "onBlur" |
+export const BaseInput = ({ leftAdornment, rightAdornment, onFocus, onBlur, ...rest }: BaseInputProps) => {
   const [isFocused, setIsFocused] = useState(false)
 
-  const handleFocus = () => {
+  const handleFocus = (e: FocusEvent) => {
     setIsFocused(true)
+
+    if (onFocus) {
+      onFocus(e)
+    }
   }
 
-  const handleBlur = () => {
+  const handleBlur = (e: BlurEvent) => {
     setIsFocused(false)
+
+    if (onBlur) {
+      onBlur(e)
+    }
   }
 
   return (

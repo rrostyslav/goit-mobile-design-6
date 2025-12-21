@@ -1,4 +1,4 @@
-import { BaseInput, BaseInputProps } from "@/components/BaseInput"
+import { BaseInput, BaseInputProps } from "@/components/common/BaseInput"
 import { useState } from "react"
 import { colors } from "@/design-system/colors"
 import { TouchableOpacity, View } from "react-native"

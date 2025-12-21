@@ -1,14 +1,14 @@
-import { View, StyleSheet, TouchableOpacity } from "react-native"
+import { View, StyleSheet, TouchableOpacity, TouchableOpacityProps } from "react-native"
 import { Typography } from "../Typography"
 import { colors } from "@/design-system/colors"
 
 type ButtonProps = {
   children: string
-}
+} & TouchableOpacityProps
 
-export const Button = ({ children }: ButtonProps) => {
+export const Button = ({ children, ...rest }: ButtonProps) => {
   return (
-    <TouchableOpacity style={styles.container}>
+    <TouchableOpacity style={styles.container} {...rest}>
       <Typography name="action-m" color="neutral">
         {children}
       </Typography>
